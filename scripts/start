@@ -7,9 +7,10 @@
 # -----------------------------------------------------------------------------
 
 
-if [ ! -f /data/minecraft_server.jar ]
+if [ ! -f /data/Tekkit.jar ]
 then
-    curl "https://s3.amazonaws.com/Minecraft.Download/versions/1.8/minecraft_server.1.8.jar" -o /data/minecraft_server.jar
+    curl "http://mirror.technicpack.net/Technic/servers/tekkitmain/Tekkit_Server_v1.2.9e.zip" > tekkit.zip && \
+    unzip tekkit.zip -d /data/
 fi
 
 
